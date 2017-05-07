@@ -1,2 +1,2 @@
-# inter
-Site for International Night.
+# International Night
+Site is created for [International Night](https://international-night.netlify.com/).
