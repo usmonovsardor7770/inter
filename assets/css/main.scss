@@ -1,0 +1,54 @@
+$color: rgba(black, .6);
+$success: #32d296;
+$danger: #f0506e;
+$gray: #DDDDDD;
+$blue: #1e87f0;
+//
+#home {
+  .uk-section {
+    background-image: linear-gradient($color, $color), url(https://source.unsplash.com/collection/805608/1920);
+  }
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+}
+
+.uk-link-success {
+  color: $blue !important;
+}
+.uk-navbar-nav {
+  display: none;
+}
+.nopadding {
+  padding: 0 0 0 15pxs;
+}
+.map {
+  position: relative;
+  padding-bottom: 85%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media all and (min-width: 640px) {
+  .uk-navbar-toggle {
+    display: none;
+  }
+  .uk-navbar-nav {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .nopadding {
+    font-size: 1.4em;
+  }
+}
