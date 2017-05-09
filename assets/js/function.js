@@ -13,7 +13,7 @@ $("#2013").on("click", function() {
             }
          }
       ], {
-         loop: true,
+         loop: false,
          hash: "2013",
          gutter: 50,
          speed: 400,
@@ -92,7 +92,7 @@ $("#2014").on("click", function() {
             }
          }
       ], {
-         loop: true,
+         loop: false,
          hash: "2014",
          gutter: 50,
          speed: 400,
@@ -154,7 +154,7 @@ $("#2015").on("click", function() {
          },
 
       ], {
-         loop: true,
+         loop: false,
          hash: "2015",
          gutter: 50,
          speed: 400,
@@ -173,7 +173,7 @@ $("#2016").on("click", function() {
             }
          }
       ], {
-         loop: true,
+         loop: false,
          hash: "2016",
          gutter: 50,
          speed: 400,
