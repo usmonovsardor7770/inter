@@ -6,11 +6,14 @@
       <title>International Night</title>
       <link rel="stylesheet" href="assets/css/uikit.min.css">
       <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
    </head>
    <body>
 
       <!-- Code -->
       <div class="container">
+
+        <!-- NAV -->
         <div class="navigation">
 
           <!-- OffCanvas -->
@@ -23,8 +26,8 @@
               <div class="uk-navbar-left">
                 <a href="#" class="uk-navbar-item uk-logo nopadding" style="color:#1e87f0;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" class="uk-margin-small-right uk-svg uk-visible@s" viewBox="0 0 523.4 511.5">
-        <path id="SVG" d="M518.7 5v502h-126l-252-222V114.5l248 218L390 5zm-378 280v222h-122V179.2zm0-171V5H13.2z"/>
-      </svg>
+                     <path id="SVG" d="M518.7 5v502h-126l-252-222V114.5l248 218L390 5zm-378 280v222h-122V179.2zm0-171V5H13.2z"/>
+                  </svg>
                   <span class="">International Night</span>
                 </a>
               </div>
@@ -35,7 +38,7 @@
                   <li><a href="#home" uk-scroll>Home</a></li>
                   <li><a href="#about" uk-scroll>About</a></li>
                   <li><a href="#faq" uk-scroll>FAQ</a></li>
-                 <!--  <li><a href="#gallery" uk-scroll>Gallery</a></li> -->
+                  <li><a href="#gallery" uk-scroll>Gallery</a></li>
                   <div class="uk-navbar-item">
                     <a class="uk-button uk-button-primary" href="https://goo.gl/forms/HABErFJo3nzmeOCq2" target="_blank" style="border-radius: 2em;">Register</a>
                   </div>
@@ -65,8 +68,8 @@
                   <!-- Logo -->
                   <a href="#" class="uk-navbar-item uk-logo" style="color:#fff;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" class="uk-margin-small-bottom uk-svg" viewBox="0 0 523.4 511.5">
-        <path id="SVG" d="M518.7 5v502h-126l-252-222V114.5l248 218L390 5zm-378 280v222h-122V179.2zm0-171V5H13.2z"/>
-      </svg>
+                       <path id="SVG" d="M518.7 5v502h-126l-252-222V114.5l248 218L390 5zm-378 280v222h-122V179.2zm0-171V5H13.2z"/>
+                    </svg>
                   </a>
                   <a href="" class="uk-logo" style="color: #fff;"><span>International Night</span></a>
                   <a href=""><span style="color: transparent;">Space</span></a>
@@ -75,7 +78,7 @@
                   <li><a href="#home" uk-scroll>Home</a></li>
                   <li><a href="#about" uk-scroll>About</a></li>
                   <li><a href="#faq" uk-scroll>FAQ</a></li>
-                  <!-- <li><a href="#gallery" uk-scroll>Gallery</a></li> -->
+                  <li><a href="#gallery" uk-scroll>Gallery</a></li>
 
                   <!-- Sign In -->
                   <a class="uk-button uk-button-primary uk-margin" href="https://goo.gl/forms/HABErFJo3nzmeOCq2" target="_blank" style="border-radius: 2em;">Register</a>
@@ -85,7 +88,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Home -->
         <section id="home">
           <div class="uk-section uk-section-media uk-background-cover uk-section-default uk-section-large uk-section-overlap">
             <!-- https://images7.alphacoders.com/386/thumb-1920-386860.jpg -->
@@ -102,6 +105,7 @@
             </div>
           </div>
         </section>
+        <!-- About -->
         <section id="about">
           <div class="uk-section uk-section-large">
             <div class="uk-container">
@@ -111,6 +115,7 @@
             </div>
           </div>
         </section>
+        <!-- FAQ -->
         <section id="faq">
           <div class="uk-section uk-section-primary uk-section-large">
             <div class="uk-container">
@@ -152,23 +157,62 @@
             </div>
           </div>
         </section>
-       <!--  <section id="gallery">
+        <!-- Gallery -->
+        <section id="gallery">
           <div class="uk-section uk-section-small">
             <div class="uk-container">
-              <h1 class="uk-h1 uk-text-center">Gallery</h1>
-              <div class="uk-section-primary" style="padding:1em 0;">
-                <h1 class="uk-heading-primary uk-text-center" style="margin:0;">Coming Soon!!!</h1>
-              </div>
+              <h1 class="uk-heading-primary uk-text-center">Gallery</h1>
+              <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-text-center" uk-grid>
+
+                 <!-- IMG -->
+                 <div>
+                   <div class="uk-card uk-card-body">
+
+                     <a id="2013" href="javascript:;">
+                       <img src="assets/img/2013/1.jpg" alt="" />
+                       <div class="uk-h3 uk-text-primary">International Night 2013</div>
+                     </a>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="uk-card uk-card-body">
+
+                     <a id="2014" href="javascript:;">
+                       <img src="assets/img/2014/1.jpg" alt="" />
+                       <div class="uk-h3 uk-text-primary">International Night 2014</div>
+                     </a>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="uk-card uk-card-body">
+
+                     <a id="2015" href="javascript:;">
+                       <img src="assets/img/2015/2.jpg" alt="" />
+                       <div class="uk-h3 uk-text-primary">International Night 2015</div>
+                     </a>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="uk-card uk-card-body">
+
+                     <a id="2016" href="javascript:;">
+                       <img src="assets/img/2016/1.jpg" alt="" />
+                       <div class="uk-h3 uk-text-primary">International Night 2016</div>
+                     </a>
+                   </div>
+                 </div>
+               </div>
             </div>
           </div>
-        </section> -->
+        </section>
+        <!-- Footer -->
         <section id="footer">
-          <div class="uk-section uk-section-small">
+          <div class="uk-section uk-section-small uk-section-primary">
             <div class="uk-container">
               <h1 class="uk-h4 uk-text-center">Made by <a href="https://www.facebook.com/usmonovsardor7770" target="_blank">Sardorbek Usmonov</a></h1>
               <div class="uk-text-center">
-                <a href="https://www.facebook.com/groups/662973790535406/" target="_blank" class="uk-icon-link" uk-icon="icon: facebook; ratio: 1.3"></a>
-                <a href="" target="_blank" class="uk-icon-link" uk-icon="icon: github; ratio: 1.3"></a>
+                <a href="https://www.facebook.com/groups/662973790535406/" target="_blank" class="uk-icon-button" uk-icon="icon: facebook; ratio: 1.2"></a>
+                <a href="" target="_blank" class="uk-icon-button" uk-icon="icon: github; ratio: 1.2"></a>
               </div>
             </div>
           </div>
@@ -178,5 +222,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="assets/js/uikit.min.js"></script>
       <script src="assets/js/uikit-icons.min.js"></script>
+      <script src="assets/js/jquery.fancybox.min.js"></script>
+      <script src="assets/js/function.min.js"></script>
    </body>
 </html>
