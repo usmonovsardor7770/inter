@@ -14,13 +14,6 @@ $blue: #1e87f0;
     color: white;
   }
 }
-
-.uk-link-success {
-  color: $blue !important;
-}
-.uk-navbar-nav {
-  display: none;
-}
 .nopadding {
   padding: 0 0 0 15pxs;
 }
@@ -36,19 +29,4 @@ $blue: #1e87f0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
-}
-
-@media all and (min-width: 640px) {
-  .uk-navbar-toggle {
-    display: none;
-  }
-  .uk-navbar-nav {
-    display: flex;
-  }
-}
-
-@media all and (max-width: 350px) {
-  .nopadding {
-    font-size: 1.4em;
-  }
 }
