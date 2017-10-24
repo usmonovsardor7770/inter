@@ -1,32 +1,164 @@
-$color: rgba(black, .6);
-$success: #32d296;
-$danger: #f0506e;
-$gray: #DDDDDD;
-$blue: #1e87f0;
-//
-#home {
-  .uk-section {
-    background-image: linear-gradient($color, $color), url(https://source.unsplash.com/collection/805608/1920);
-  }
-  h1,
-  h2,
-  h3 {
-    color: white;
-  }
-}
-.nopadding {
-  padding: 0 0 0 15pxs;
-}
-.map {
-  position: relative;
-  padding-bottom: 85%; // This is the aspect ratio
-  height: 0;
-  overflow: hidden;
-}
-.map iframe {
-  position: absolute;
+// Color
+$color-blue: #2c8bff;
+$color-purple: #5875f5;
+
+// Header
+$header-bg-img: url("https://source.unsplash.com/0UQJiRQVzsw/1600x900");
+$header-bg-overlay: linear-gradient(rgba(black, 0.2), rgba(black, 0.2));
+
+// Fonts
+$serif: "Merriweather", serif;
+$sans-serif: "Raleway", sans-serif;
+
+$mobile: 480px;
+$tablet: 758px;
+$laptop: 1024px;
+
+// Loader
+
+#loader-wrapper {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: white;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+
+  svg {
+    path {
+      fill: $color-blue;
+    }
+  }
+}
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $sans-serif;
+  background-color: white;
+
+  a,
+  .btn {
+    text-decoration: none;
+    font-size: 1.25rem;
+    background: transparent;
+    border: 2px solid white;
+    padding: 0.5em 1.25em;
+    color: white;
+    transition: all 300ms ease-out;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: white;
+      color: $color-blue;
+    }
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  background: $header-bg-overlay, $header-bg-img no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .header-wrapper {
+    margin: 0 1em;
+
+    h1 {
+      font-size: calc(5.35em + 1vw);
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 0 0.25em;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $serif;
+      font-size: 1.5em;
+      word-spacing: 1px;
+      line-height: 1.5em;
+      margin: 1.5em 0;
+      font-weight: 300;
+
+      &.disclamer {
+        max-width: 500px;
+        color: lightgray;
+        font-size: 0.75em;
+        margin: 0 auto;
+        padding: 1.75em 0;
+        transition: all 300ms ease-out;
+
+        &:hover {
+          color: rgba(white, 0.97);
+        }
+      }
+    }
+    a.btn {
+      font-family: "Roboto", serif;
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  header .header-wrapper {
+    h1 {
+      font-size: calc(4em + 1vw);
+    }
+    p {
+      font-size: 1.15em;
+    }
+    a.btn {
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width: $tablet) {
+  header .header-wrapper {
+    h1 {
+      font-size: calc(3.5em + 1vw);
+    }
+    p {
+      font-size: 1.1em;
+    }
+    a.btn {
+      font-size: 1.15em;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  header .header-wrapper {
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1em;
+    }
+    a.btn {
+      font-size: 1.1em;
+    }
+  }
 }
