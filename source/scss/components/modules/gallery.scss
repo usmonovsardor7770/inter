@@ -1,21 +1,19 @@
-/* GALLERY */
 #gallery {
-  margin-bottom: 2em ;
+  margin-bottom: 2em;
 
   h1 {
     color: lighten(black, 20%);
     text-align: center;
     font-size: 2.5em;
   }
+
   .card-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-
     max-width: $laptop-large;
-    margin: 0  auto;
-    margin-top: 5em;
+    margin: 5em auto 0;
 
     .card {
       flex: 1 1 400px;
@@ -26,7 +24,6 @@
       margin: 1.5em 1em;
       padding: 1em;
       transition: all 300ms ease-out;
-
       background: linear-gradient(rgba($color-blue, .5) 0%, rgba($color-blue, .5) 100%), $header-bg-img no-repeat center center;
       background-size: cover;
 

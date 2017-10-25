@@ -5,6 +5,7 @@
       h1 {
         font-size: calc(5em + 1vw);
       }
+
       h4 {
         font-size: 1.5em;
       }
@@ -17,24 +18,26 @@
         margin-bottom: -0.4em;
         font-size: 14em;
       }
+
       h2 {
         font-size: 2.5em;
       }
     }
   }
 }
-
 @media screen and (max-width: $laptop) {
   header {
     .header-wrapper {
       h1 {
         font-size: calc(4em + 1vw);
       }
+
       h4 {
         font-size: 1.25em;
       }
-      button,
-      .btn-register {
+
+      .btn-register,
+      button {
         font-size: 1.35em;
       }
     }
@@ -50,13 +53,13 @@
         margin-bottom: -0.39em;
         font-size: 11em;
       }
+
       h2 {
         font-size: 2em;
       }
     }
   }
 }
-
 @media screen and (max-width: $tablet) {
   .ghost-nav {
     height: 62;
@@ -83,12 +86,15 @@
         width: 46px;
         height: 42px;
       }
+
       .logo {
         display: none;
       }
+
       .nav-list {
         display: none;
       }
+
       .menu {
         margin-left: auto;
       }
@@ -101,20 +107,21 @@
         margin-bottom: -0.38em;
         font-size: 9em;
       }
+
       h2 {
         font-size: 1.75em;
       }
     }
-    .card-wrapper {
 
-      font-size: .95em;
+    .card-wrapper {
+      font-size: 0.95em;
+
       .card {
         margin: 2em 0;
       }
     }
   }
 }
-
 @media screen and (max-width: $mobile) {
   header {
     .header-wrapper {
@@ -139,24 +146,26 @@
         margin-bottom: -0.38em;
         font-size: 8em;
       }
+
       h2 {
         font-size: 1.5em;
       }
     }
   }
 }
-
 @media screen and (max-width: $mobile-small) {
   header {
     .header-wrapper {
       h1 {
         font-size: 2.5em;
       }
+
       h4 {
         font-size: 1.1em;
       }
     }
   }
+
   nav {
     padding: 0 1.5em;
   }

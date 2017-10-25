@@ -1,11 +1,11 @@
 // Reset
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
 }
-
 
 body {
   position: relative;
@@ -15,7 +15,9 @@ body {
   a {
     text-decoration: none;
   }
-  button, .btn {
+
+  .btn,
+  button {
     font-size: 1.25rem;
     background: white;
     border: none;
@@ -38,12 +40,11 @@ body {
   }
 }
 
-
 #site {
   display: none;
 }
-
 // Loader
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -55,7 +56,6 @@ body {
   opacity: 1;
   transition: opacity 2s ease;
 }
-
 
 #loader {
   display: block;

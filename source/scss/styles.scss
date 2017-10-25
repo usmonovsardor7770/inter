@@ -1,7 +1,7 @@
 // BASE SCSS
 @import 'components/base/vars';
 @import 'components/base/base';
-@import 'components/base/media';
+
 // MODULES
 @import 'components/modules/nav';
 @import 'components/modules/header';
@@ -9,3 +9,6 @@
 @import 'components/modules/faq';
 @import 'components/modules/gallery';
 @import 'components/modules/footer';
+
+// BASE SCSS
+@import 'components/base/media';
