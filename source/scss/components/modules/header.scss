@@ -1,0 +1,39 @@
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  background: $header-bg-overlay, $header-bg-img no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .header-wrapper {
+    h1 {
+      font-size: calc(5.35em + 1vw);
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0 0.25em;
+    }
+    h4 {
+      font-family: $serif;
+      font-size: 1.6em;
+      font-weight: 300;
+      margin: 1.5em 0;
+    }
+    button {
+      font-size: 1.5em;
+      color: white;
+      letter-spacing: 1px;
+      background: $color-blue;
+      background-image: linear-gradient(
+        to right,
+        $color-blue 0%,
+        $color-purple 90%
+      );
+    }
+  }
+}

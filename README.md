@@ -1,2 +1,3 @@
 # International Night
-Site is created for [International Night](https://in-mhs.netlify.com/).
+Site is Developmental version of [International Night](https://in-mhs-dev.netlify.com/).
+Click the link to view stable release of [International Night](https://in-mhs-dev.netlify.com/). 

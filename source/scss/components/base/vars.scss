@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Raleway:300,400,700');
+
+// Color
+$color-blue: #2c8bff;
+$color-purple: #5875f5;
+
+// Header
+$header-bg-img: url("/public/img/bg.jpg");
+$header-bg-overlay: linear-gradient(rgba(black, 0.2), rgba(black, 0.2));
+
+// Shadow
+$shadow: rgba(62, 57, 107, 0.09) 0px 10px 40px 0px,
+  rgba(62, 57, 107, 0.07) 0px 2px 10px 0px;
+$shadow-hover: rgba($color-blue, 0.5) 0 10px 34px 0, rgba(0, 0, 0, 0) 0 0 0 0;
+
+// Fonts
+$serif: "Merriweather", serif;
+$sans-serif: "Raleway", sans-serif;
+
+// Size
+$mobile-small: 350px;
+$mobile: 480px;
+$tablet: 758px;
+$laptop: 1024px;
+$laptop-large: 1440px;
+
+// Others
+$transition: color 300ms ease-in-out;
