@@ -10,7 +10,6 @@ const
    browserSync          = require('browser-sync').create();
 
 
-
 // HTML Watch
 gulp.task('html', function(){
   return  gulp.src('*.html')
