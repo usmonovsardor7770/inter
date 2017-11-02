@@ -22,14 +22,16 @@ body {
     background: white;
     border: none;
     border-radius: 50px;
+    width: 175px;
     padding: 0.5em 1.25em;
     color: lighten(black, 20%);
     box-shadow: $shadow;
-    transition: all 300ms ease-out;
+    transition: all 200ms ease-in-out;
 
     &:hover {
       transform: translateY(-3px) translateZ(0px);
       box-shadow: $shadow-hover;
+      width: 200px;
     }
   }
 

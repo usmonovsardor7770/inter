@@ -1,6 +1,7 @@
-// BASE SCSS
-@import 'components/base/vars';
-@import 'components/base/base';
+// RESET SCSS
+@import 'components/reset/vars';
+@import 'components/reset/base';
+@import 'components/reset/media-quaries';
 
 // MODULES
 @import 'components/modules/nav';
@@ -10,5 +11,4 @@
 @import 'components/modules/gallery';
 @import 'components/modules/footer';
 
-// BASE SCSS
-@import 'components/base/media';
+
