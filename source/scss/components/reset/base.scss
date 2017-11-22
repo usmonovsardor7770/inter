@@ -1,5 +1,4 @@
 // Reset
-
 * {
   margin: 0;
   padding: 0;
@@ -9,68 +8,10 @@
 
 body {
   position: relative;
-  font-family: $sans-serif;
+  font-family: $raleway;
   background-color: white;
 
   a {
     text-decoration: none;
-  }
-
-  .btn,
-  button {
-    font-size: 1.25rem;
-    background: white;
-    border: none;
-    border-radius: 50px;
-    width: 175px;
-    padding: 0.5em 1.25em;
-    color: lighten(black, 20%);
-    box-shadow: $shadow;
-    transition: all 200ms ease-in-out;
-
-    &:hover {
-      transform: translateY(-3px) translateZ(0px);
-      box-shadow: $shadow-hover;
-      width: 200px;
-    }
-  }
-
-  .ghost-nav {
-    height: 68px;
-    width: 100%;
-    background: transparent;
-  }
-}
-
-#site {
-  display: none;
-}
-// Loader
-
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background-color: white;
-  opacity: 1;
-  transition: opacity 2s ease;
-}
-
-#loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-
-  svg {
-    path {
-      fill: $color-blue;
-    }
   }
 }
