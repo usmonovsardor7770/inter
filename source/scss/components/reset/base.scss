@@ -14,4 +14,18 @@ body {
   a {
     text-decoration: none;
   }
+
+  button.btn {
+    font-size: 1em;
+    letter-spacing: .05em;
+    padding: .55em 1.3em;
+    border: none;
+    border-radius: 2em;
+    background: white;
+    transition: $transition;
+
+    &:hover {
+      
+    }
+  }
 }

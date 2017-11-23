@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Raleway:300,400,700');
 
 // Color
+$blue: #2C8BFF;
+$red: #F05D5E;
+$white: #E7ECEF;
+$dark: #272932;
+$yellow: #E4B363;
+
 
 // Fonts
-$abril: 'Abril Fatface', cursive;
+$merriweather: 'Merriweather', serif;
 $raleway: 'Raleway', sans-serif;
 
 // Size
@@ -12,3 +18,7 @@ $mobile: 480px;
 $tablet: 758px;
 $laptop: 1024px;
 $laptop-large: 1440px;
+
+// header
+$header-bg-grd: linear-gradient(rgba(black, 0.2), rgba(black, 0.2));
+$header-bg-url: url("/public/img/bg.jpg") no-repeat center center;
