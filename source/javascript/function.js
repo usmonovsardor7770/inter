@@ -13,4 +13,16 @@ $(document).ready(function() {
 
   // Dynamic Year for footer
   document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  // Nav Onscroll add class
+  $(window).scroll(function() {
+    // If scrolled more than 10px
+    if ($(document).scrollTop() > 1) {
+      $("nav").addClass("fixed");
+    } else {
+      if ($("nav").hasClass("fixed")) {
+        $("nav").removeClass("fixed");
+      }
+    }
+  });
 });

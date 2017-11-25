@@ -1,0 +1,65 @@
+#faq {
+  padding: 2em 0;
+
+  .faq-header {
+    text-align: center;
+
+    h1 {
+      font-size: 2.75em;
+      font-weight: 400;
+      letter-spacing: 1px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: $laptop-large;
+    margin: 2em auto 0;
+
+    .card {
+      flex: 1 1 400px;
+      text-align: center;
+      width: 250px;
+      max-width: 375px;
+      min-height: 200px;
+      margin: 1.5em 1em;
+      padding: 1em;
+      transition: all 300ms ease-out;
+
+      h1 {
+        font-size: 2em;
+        color: $blue;
+        margin-bottom: 1em;
+       }
+
+       p {
+        color: darken(grey, 5%);
+        line-height: 1.75em;
+        padding: .5em 0;
+       }
+
+      .map {
+        position: relative;
+        padding-bottom: 85%; // This is the aspect ratio
+        margin-top: 1em;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

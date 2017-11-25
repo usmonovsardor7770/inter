@@ -21,4 +21,5 @@ $laptop-large: 1440px;
 
 // header
 $header-bg-grd: linear-gradient(rgba(black, 0.2), rgba(black, 0.2));
-$header-bg-url: url("/public/img/bg.jpg") no-repeat center center;
+$header-bg-url: url("/public/img/bg.jpg") no-repeat 50% 50%;
+// $header-bg-url: url("https://source.unsplash.com/VVgVlH1D10U") no-repeat 50% 50%;

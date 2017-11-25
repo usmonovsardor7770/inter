@@ -1,6 +1,154 @@
 /* RESPONSIVE */
-@media screen and (min-width: $laptop-large)  {}
-@media screen and (min-width: $laptop) {}
-@media screen and (min-width: $tablet) {}
-@media screen and (min-width: $mobile) {}
-@media screen and (min-width: $mobile-small) {}
+@media screen and (max-width: $laptop-large)  {
+  #about {
+    .about-info p {
+      font-size: 1.75em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  #schedule {
+    font-size: .85em;
+  }
+}
+@media screen and (max-width: $laptop) {
+  header {
+    .header-title {
+      h1 {
+        font-size: 3.5em;
+      }
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+
+  #about {
+    .about-info p {
+      font-size: 1.5em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2.25em;
+      }
+    }
+  }
+
+  #schedule {
+    font-size: .75em;
+  }
+}
+@media screen and (max-width: $tablet) {
+  nav {
+    .logo {
+      display: none;
+    }
+    .nav-list {
+      display: none;
+    }
+    .menu {
+      display: block !important;
+    }
+  }
+
+  header {
+    .header-title {
+      h1 {
+        font-size: 2.75em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #about {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em 0;
+
+    .about-info {
+      width: 100%;
+      padding: 4.5em 1em;
+
+      p {
+        font-size: 1.25em;
+      }
+    }
+    .about-img {
+      width: 100%;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2em;
+      }
+    }
+    .card-wrapper .card h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  #schedule {
+    .schedule-wrapper .date {
+      font-size: .745em;
+
+      h2 {
+        letter-spacing: 7px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: $mobile) {
+  header {
+    .header-title {
+      h1 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  #about {
+    .about-info p {
+      font-size: 1.15em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 1.85em;
+      }
+      .card-wrapper .card h1 {
+        font-size: 1.35em;
+      }
+    }
+  }
+
+  #schedule {
+    .schedule-wrapper .date {
+      font-size: .6em;
+
+      h2 {
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-small) {}
