@@ -17,6 +17,7 @@
   #schedule {
     font-size: .85em;
   }
+
 }
 @media screen and (max-width: $laptop) {
   header {
@@ -46,6 +47,12 @@
 
   #schedule {
     font-size: .75em;
+  }
+
+  #gallery {
+    .container {
+      column-count: 3;
+    }
   }
 }
 @media screen and (max-width: $tablet) {
@@ -111,6 +118,17 @@
     }
   }
 
+  #gallery {
+
+    h1 {
+      font-size: 3.5em;
+    }
+    .container {
+      column-count: 2;
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 @media screen and (max-width: $mobile) {
   header {
@@ -148,6 +166,15 @@
       h2 {
         letter-spacing: 5px;
       }
+    }
+  }
+
+  #gallery {
+
+    .container {
+      column-count: 1;
+      // display: grid;
+      // grid-template-columns: repeat(1, 1fr);
     }
   }
 }

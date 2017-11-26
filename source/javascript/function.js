@@ -25,4 +25,6 @@ $(document).ready(function() {
       }
     }
   });
+
+  var lightbox = $('#gallery a').simpleLightbox();
 });

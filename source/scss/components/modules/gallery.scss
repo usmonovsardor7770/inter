@@ -1,0 +1,25 @@
+#gallery {
+
+  h1 {
+    text-align: center;
+    font-size: 3.75em;
+    padding: 2em 0;
+  }
+
+  .container {
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 2em;
+    padding: 0 2em;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 2em;
+
+    img {
+      /* Just in case there are inline attributes */
+      width: 100% !important;
+      height: auto !important;
+      padding-bottom: 2em;
+    }
+  }
+}
