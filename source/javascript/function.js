@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   // Dynamic Year for footer
-  document.getElementById("year").innerHTML = new Date().getFullYear();
+  // document.getElementById("year").innerHTML = new Date().getFullYear();
 
   // Nav Onscroll add class
   $(window).scroll(function() {
@@ -23,12 +23,6 @@ $(document).ready(function() {
       if ($("nav").hasClass("fixed")) {
         $("nav").removeClass("fixed");
       }
-    }
-  });
-  $(window).scroll(function() {
-    // If scrolled more than 10px
-    if ($(document).scrollTop() > 1) {
-      console.log('scrolled');
     }
   });
 
