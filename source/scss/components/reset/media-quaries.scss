@@ -18,6 +18,9 @@
     font-size: .85em;
   }
 
+  #register .title h1 {
+    font-size: 2em;
+  }
 }
 @media screen and (max-width: $laptop) {
   nav {
@@ -70,17 +73,22 @@
   #schedule {
     font-size: .75em;
   }
+
+  #register .title h1 {
+    font-size: 1.75em;
+  }
 }
 @media screen and (max-width: 950px) {
   nav .logo {
     display: none;
   }
+
+  #register .title h1 {
+    padding: 0 3em;
+  }
 }
 @media screen and (max-width: $tablet) {
   nav {
-    // .logo {
-    //   display: none;
-    // }
     .nav-list {
       display: none;
     }
@@ -148,6 +156,10 @@
       column-count: 2;
     }
   }
+
+  #register .title h1 {
+    padding: 0 2.5em;
+  }
 }
 @media screen and (max-width: $mobile) {
   header {
@@ -193,6 +205,10 @@
     .container {
       column-count: 1;
     }
+  }
+
+  #register .title h1 {
+    padding: 0 1em;
   }
 }
 @media screen and (max-width: $mobile-small) {}
