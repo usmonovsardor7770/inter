@@ -20,6 +20,28 @@
 
 }
 @media screen and (max-width: $laptop) {
+  nav {
+    height: 70px;
+
+    .logo-svg {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    .logo {
+      font-size: 1.5em;
+    }
+
+    .nav-list a {
+      font-size: 1.1em;
+    }
+
+    .menu {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
   header {
     .header-title {
       h1 {
@@ -48,18 +70,17 @@
   #schedule {
     font-size: .75em;
   }
-
-  #gallery {
-    .container {
-      column-count: 3;
-    }
+}
+@media screen and (max-width: 950px) {
+  nav .logo {
+    display: none;
   }
 }
 @media screen and (max-width: $tablet) {
   nav {
-    .logo {
-      display: none;
-    }
+    // .logo {
+    //   display: none;
+    // }
     .nav-list {
       display: none;
     }
@@ -125,8 +146,6 @@
     }
     .container {
       column-count: 2;
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -173,8 +192,6 @@
 
     .container {
       column-count: 1;
-      // display: grid;
-      // grid-template-columns: repeat(1, 1fr);
     }
   }
 }

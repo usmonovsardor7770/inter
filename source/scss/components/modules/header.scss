@@ -27,14 +27,16 @@ header {
     }
     a.btn-register {
       font-size: 1.25em;
+      letter-spacing: 2px;
       color: white;
-      background-image: linear-gradient(to right,$blue 0, lighten($blue, 1%) 90%);
-      box-shadow: rgba(black, .1) 0 3px 5px 0;
+      background: $blue;
+      box-shadow: rgba(black, .15) 0 3px 5px 0;
       transition: all 300ms ease-in-out;
 
       &:hover {
-        box-shadow: rgba(black, .1) 0 5px 15px 0;
-        background-image: linear-gradient(to right,$yellow 0, lighten($yellow, 1%) 90%);
+        box-shadow: rgba(black, .15) 0 5px 15px 0;
+        color: $blue;
+        background: white;
       }
     }
   }

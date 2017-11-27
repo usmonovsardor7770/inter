@@ -1,0 +1,59 @@
+#register {
+  min-height: 0;
+  padding-top: 80px;
+
+  display: flex;
+
+  .map {
+    position: absolute;
+    padding-bottom: 60vh; // This is the aspect ratio
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // margin-top: 15%;
+    z-index: 4;
+    height: 60vh;
+    width: 100%;
+    background: rgba($blue, .9);
+    box-shadow: rgba(gray, .25) 0 3px 8px 0;
+
+    h1 {
+      font-size: 2.5em;
+      padding: 0 5em;
+      color: white;
+      line-height: 1.35em;
+    }
+
+    a.btn {
+      color: white;
+      font-size: 1.2em;
+      font-weight: 700;
+      border: 2px solid darken($blue, 15%);
+      background: darken($blue, 15%);
+      padding: .6em 1.7em;
+      margin-top: 3.5em;
+
+      &:hover {
+        background: white;
+        border: 2px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+}

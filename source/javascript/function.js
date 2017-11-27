@@ -25,6 +25,12 @@ $(document).ready(function() {
       }
     }
   });
+  $(window).scroll(function() {
+    // If scrolled more than 10px
+    if ($(document).scrollTop() > 1) {
+      console.log('scrolled');
+    }
+  });
 
   var lightbox = $('#gallery a').simpleLightbox();
 });
