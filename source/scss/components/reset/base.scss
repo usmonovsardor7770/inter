@@ -1,4 +1,5 @@
 // Reset
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +18,8 @@ body {
 
   a.btn {
     font-size: 1em;
-    letter-spacing: .05em;
-    padding: .6em 1.4em;
+    letter-spacing: 0.05em;
+    padding: 0.6em 1.4em;
     border: none;
     border-radius: 2em;
     background: white;
@@ -30,5 +31,5 @@ body {
 }
 
 .sl-overlay {
-  opacity: .95 !important;
+  opacity: 0.95 !important;
 }

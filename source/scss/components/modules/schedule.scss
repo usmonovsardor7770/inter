@@ -21,6 +21,7 @@
         font-weight: 400;
         color: rgba($blue, .75);
       }
+
       span {
         color: rgba(black, .85);
         align-self: flex-start;
@@ -28,14 +29,16 @@
         font-size: 3em;
         font-weight: 700;
       }
+
       h2 {
         color: rgba(black, .85);
         font-family: $merriweather;
         font-size: 4.5em;
-        padding-bottom: .75em;
+        padding-bottom: 0.75em;
         letter-spacing: 10px;
       }
     }
+
     .timeline-wrapper {
       display: flex;
       flex-flow: column nowrap;
@@ -54,6 +57,7 @@
         .time {
           padding: 1em;
         }
+
         .time-info {
           padding: 1em;
         }

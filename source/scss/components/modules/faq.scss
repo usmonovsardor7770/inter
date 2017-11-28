@@ -1,14 +1,19 @@
 #faq {
-  min-height: 0;
-  padding: 120px 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
 
   .faq-header {
     text-align: center;
+    padding-bottom: 2em;
 
     h1 {
       font-size: 2.75em;
       font-weight: 400;
       letter-spacing: 1px;
+      padding-bottom: 1em;
 
       span {
         font-weight: 700;
@@ -18,36 +23,34 @@
 
   .card-wrapper {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: $laptop-large;
-    margin: 2em auto 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 400px));
+    grid-gap: 5em;
+    padding: 0 1em;
 
     .card {
-      flex: 1 1 400px;
+      align-self: flex-start;
       text-align: center;
-      width: 250px;
-      max-width: 400px;
       min-height: 200px;
-      margin: 1.5em 1em;
       transition: all 300ms ease-out;
 
       h1 {
         font-size: 2em;
         color: $blue;
         margin-bottom: 1em;
-       }
+      }
 
-       p {
+      p {
         color: darken(grey, 5%);
         line-height: 1.75em;
-        padding: .5em 0;
-       }
+        padding: 0.5em 0;
+      }
 
       .map {
         position: relative;
-        padding-bottom: 85%; // This is the aspect ratio
+        padding-bottom: 85%;
         margin-top: 1em;
         height: 0;
         overflow: hidden;

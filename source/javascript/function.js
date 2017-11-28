@@ -17,7 +17,8 @@ $(document).ready(function() {
   // Nav Onscroll add class
   $(window).scroll(function() {
     // If scrolled more than 10px
-    if ($(document).scrollTop() > 1) {
+      
+    if ($(document).scrollTop() > 1) {
       $("nav").addClass("fixed");
     } else {
       if ($("nav").hasClass("fixed")) {

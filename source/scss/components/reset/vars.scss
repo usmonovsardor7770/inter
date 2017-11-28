@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Raleway:300,400,700');
 
-// Color
+/* Color */
 $blue: #2C8BFF;
 $red: #F05D5E;
 $white: #E7ECEF;
@@ -8,18 +8,18 @@ $dark: #272932;
 $yellow: #E4B363;
 
 
-// Fonts
+/* Fonts */
 $merriweather: 'Merriweather', serif;
 $raleway: 'Raleway', sans-serif;
 
-// Size
+/* Size */
 $mobile-small: 350px;
 $mobile: 480px;
 $tablet: 758px;
 $laptop: 1024px;
 $laptop-large: 1440px;
 
-// header
+/* Header */
 $header-bg-grd: linear-gradient(rgba(black, 0.2), rgba(black, 0.2));
 $header-bg-url: url("/public/img/bg.jpg") no-repeat 50% 50%;
-// $header-bg-url: url("https://source.unsplash.com/VVgVlH1D10U") no-repeat 50% 50%;
+/* $header-bg-url: url("https://source.unsplash.com/VVgVlH1D10U") no-repeat 50% 50%;*/
