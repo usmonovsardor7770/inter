@@ -27,7 +27,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 400px));
-    grid-gap: 5em;
+    grid-column-gap: 5em;
     padding: 0 1em;
 
     .card {

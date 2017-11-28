@@ -61,7 +61,8 @@ gulp.task('browserSync', function() {
     browserSync.init(["source/scss/*.scss", "source/javascript/*.js"], {
         server: {
             baseDir: "./"
-        }
+        },
+        notify: false
     });
 });
 

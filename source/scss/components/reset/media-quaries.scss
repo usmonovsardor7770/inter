@@ -16,7 +16,7 @@
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(3, minmax(auto, 350px));
-      grid-gap: 1.5em;
+      grid-column-gap: 1.5em;
     }
   }
 
@@ -93,7 +93,7 @@
   #faq .card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 300px));
-    grid-gap: 1.5em;
+    grid-column-gap: 1.5em;
   }
 
   #register .title h1 {
@@ -104,10 +104,6 @@
   nav {
     .nav-list {
       display: none;
-    }
-
-    .menu {
-      display: block !important;
     }
   }
 
@@ -128,11 +124,15 @@
     grid-template-columns: 1fr;
 
     .about-info {
-      padding: 1em 1.5em 5em;
+      padding: 5em 2em;
 
       p {
         font-size: 1.25em;
       }
+    }
+
+    .about-img img {
+      height: 100%;
     }
   }
 
@@ -146,7 +146,8 @@
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(2, minmax(auto, 300px));
-      grid-gap: 1.5em;
+      grid-column-gap: 1.5em;
+      grid-row-gap: 5em;
 
       .card h1 {
         font-size: 1.5em;
