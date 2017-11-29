@@ -36,38 +36,6 @@ body {
 }
 
 // Preload Page
-
-// #splash-page {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 1000;
-//   background-color: white;
-//   opacity: 1;
-// }
-//
-// .loaded #splash-page {
-//   display: none;
-//   transition: all 300ms ease-out;
-// }
-//
-// #splash-page-logo {
-//   position: relative;
-//   left: 50%;
-//   top: 50%;
-//   width: 150px;
-//   height: 150px;
-//   margin: -75px 0 0 -75px;
-//
-//   svg {
-//     path {
-//       fill: $blue;
-//     }
-//   }
-// }
-
 #preload {
   position: fixed;
   top: 0;
@@ -84,12 +52,10 @@ body {
     width: 12em;
     height: 12em;
     transform: translate(-50%, -50%);
-    background: red;
     animation: pulse 1s infinite;
 
     &.paused {
       animation: none;
-      background: blue;
     }
 
     svg path {
