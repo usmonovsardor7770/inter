@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  // Logo Animate
-  $("#splash-screen").animate({
+  // Preload
+  $("#preload").animate({
     opacity: 0
   }, 1000, function() {
     setTimeout(function() {
-      $('#splash-screen').css('display', 'none');
+      $('.preload-logo').addClass('paused');
     }, 2000);
   });
 
@@ -19,9 +19,6 @@ $(document).ready(function() {
       }, 700);
     }
   });
-
-  // Dynamic Year for footer
-  // document.getElementById("year").innerHTML = new Date().getFullYear();
 
   // Nav Onscroll add class
   $(window).scroll(function() {
@@ -45,24 +42,4 @@ $(document).ready(function() {
   });
 
   var lightbox = $('#gallery a').simpleLightbox();
-});
-
-
-// Animate LOGO
-var logo = anime({
-  targets: '#logo',
-  rotate: {
-    value: '1turn',
-    duration: 1800,
-    easing: [.91,-0.54,.29,1.56]
-  },
-  scale: {
-    value: 1.25,
-    duration: 2000,
-    delay: 800,
-    easing: 'easeInOutQuart'
-  },
-  delay: 250,
-  loop: 2,
-  direction: 'alternate'
 });
