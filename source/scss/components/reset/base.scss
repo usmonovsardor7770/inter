@@ -62,6 +62,10 @@ body {
     	fill: $blue;
     }
   }
+
+  &.loaded {
+    display: none;
+  }
 }
 
 

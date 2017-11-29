@@ -6,7 +6,8 @@ $(document).ready(function() {
   }, 1000, function() {
     setTimeout(function() {
       $('.preload-logo').addClass('paused');
-    }, 2000);
+      $('#preload').addClass('loaded');
+    }, 1000);
   });
 
   // Nav a Onclick scroll to certain id
