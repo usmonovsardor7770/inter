@@ -1,6 +1,6 @@
 /* RESPONSIVE */
 @media screen and (max-width: $laptop-large) {
-  #about {
+  #about .about-wrapper {
     .about-info p {
       font-size: 1.75em;
     }
@@ -63,7 +63,7 @@
     }
   }
 
-  #about {
+  #about .about-wrapper {
     .about-info p {
       font-size: 1.5em;
     }
@@ -119,7 +119,7 @@
     }
   }
 
-  #about {
+  #about .about-wrapper {
     display: grid;
     grid-template-columns: 1fr;
 
@@ -198,7 +198,7 @@
     }
   }
 
-  #about {
+  #about .about-wrapper {
     .about-info p {
       font-size: 1.15em;
     }

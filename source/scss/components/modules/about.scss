@@ -1,7 +1,16 @@
 #about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0;
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
 
   .about-info {
     display: flex;
@@ -16,14 +25,14 @@
     }
   }
 
-  .about-img img {
-    height: 80%;
-    width: 100%;
-    object-fit: cover;
-  }
-
   .about-img {
     display: flex;
     align-items: center;
+
+    img {
+      height: 80%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }

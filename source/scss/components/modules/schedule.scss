@@ -2,7 +2,7 @@
   min-height: 0;
   position: relative;
   text-align: center;
-  padding: 5em 0;
+  padding: 3em 0;
 
   .schedule-wrapper {
     display: flex;
@@ -42,17 +42,11 @@
     }
 
     .timeline-wrapper {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       padding-bottom: 2.5em;
 
       .timeline {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         max-width: 450px;
         font-size: 2em;
 
