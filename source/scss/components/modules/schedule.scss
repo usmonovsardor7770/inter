@@ -1,0 +1,63 @@
+#schedule {
+  min-height: 0;
+  position: relative;
+  text-align: center;
+  padding: 3em 0;
+
+  .schedule-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+
+    .date {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
+
+      h1 {
+        font-size: 15em;
+        font-weight: 400;
+        color: rgba($blue, .75);
+      }
+
+      span {
+        color: rgba(black, .85);
+        align-self: flex-start;
+        padding-top: 1.2em;
+        font-size: 3em;
+        font-weight: 700;
+      }
+
+      h2 {
+        color: rgba(black, .85);
+        font-family: $merriweather;
+        font-size: 4.5em;
+        padding-bottom: 0.75em;
+        letter-spacing: 10px;
+      }
+    }
+
+    .timeline-wrapper {
+      padding-bottom: 2.5em;
+
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 450px;
+        font-size: 2em;
+
+        .time {
+          padding: 1em;
+        }
+
+        .time-info {
+          padding: 1em;
+        }
+      }
+    }
+  }
+}

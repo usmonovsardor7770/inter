@@ -1,0 +1,70 @@
+#faq {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  background: rgba(gray, .07);
+
+  .faq-header {
+    text-align: center;
+    padding-bottom: 2em;
+
+    h1 {
+      font-size: 2.75em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding-bottom: 1em;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 400px));
+    grid-column-gap: 5em;
+    padding: 0 1em;
+
+    .card {
+      align-self: flex-start;
+      text-align: center;
+      min-height: 200px;
+      transition: all 300ms ease-out;
+
+      h1 {
+        font-size: 2em;
+        color: $blue;
+        margin-bottom: 1em;
+      }
+
+      p {
+        color: darken(grey, 5%);
+        line-height: 1.75em;
+        padding: 0.5em 0;
+      }
+
+      .map {
+        position: relative;
+        padding-bottom: 85%;
+        margin-top: 1em;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

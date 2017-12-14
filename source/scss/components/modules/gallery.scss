@@ -1,0 +1,22 @@
+#gallery {
+  h1 {
+    text-align: center;
+    font-size: 3.75em;
+    padding: 2em 0;
+  }
+
+  .container {
+    max-width: $laptop-large;
+    margin: 0 auto;
+    padding: 0 2em;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 2em;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+      padding-bottom: 2em;
+    }
+  }
+}

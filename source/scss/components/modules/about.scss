@@ -1,0 +1,38 @@
+#about {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0;
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .about-info {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    text-align: center;
+
+    p {
+      padding: 1em 0;
+      font-size: 1.75em;
+      line-height: 1.5em;
+    }
+  }
+
+  .about-img {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 80%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -48,7 +48,7 @@ gulp.task('js', function(){
 
 // IMG Optimization
 gulp.task('img', function(){
-  return  gulp.src('source/img/**/*')
+  return gulp.src('source/img/**/*')
       .pipe(gulp.dest('public/img'))
       .pipe(browserSync.reload({
          stream: true
@@ -61,7 +61,8 @@ gulp.task('browserSync', function() {
     browserSync.init(["source/scss/*.scss", "source/javascript/*.js"], {
         server: {
             baseDir: "./"
-        }
+        },
+        notify: false
     });
 });
 
