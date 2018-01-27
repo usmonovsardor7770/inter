@@ -1,28 +1,44 @@
 var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var CssoWebpackPlugin = require('csso-webpack-plugin').default;
 
-module.exports = {
-    entry: './src/js/function.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+var baseConfig = {
+    entry: {
+        app: './src/app.js'
     },
     module: {
         rules: [{
-            test: /\.css$/,
-            exclude: /node_modules/,
-            use: [{
-                    loader: 'style-loader',
-                },
-                {
-                    loader: 'css-loader',
-                    options: {
-                        importLoaders: 1,
-                    }
-                },
-                {
-                    loader: 'postcss-loader'
-                }
-            ]
-        }]
-    }
-};
+            test: /\.postcss$/,
+            use: ExtractTextPlugin.extract(
+                [
+                    'css-loader',
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            plugins: () => ([
+                                require("postcss-import"),
+                                require("postcss-cssnext"),
+                            ]),
+                        },
+                    },
+                ]
+            ),
+        }, ]
+    },
+    output: {
+        filename: '[name].js',
+        path: path.resolve('./dist')
+    },
+    plugins: [
+        new ExtractTextPlugin('[name].css'),
+        new CssoWebpackPlugin(),
+    ]
+}
+
+module.exports = baseConfig;
+
+if (process.env.NODE_ENV === 'production') {
+    module.exports.plugins.push(
+        new webpack.optimize.UglifyJsPlugin()
+    )
+}
