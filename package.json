@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --watch",
-    "build": "webpack -p"
+    "dev" : "webpack && webpack-dev-server --progress --colors",
+    "build": "webpack SET NODE_ENV=production"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/usmonovsardor7770/inter#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.28.9",
     "csso-webpack-plugin": "^1.0.0-beta.10",
     "extract-text-webpack-plugin": "^3.0.2",

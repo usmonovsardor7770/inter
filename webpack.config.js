@@ -1,6 +1,7 @@
 var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CssoWebpackPlugin = require('csso-webpack-plugin').default;
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 var baseConfig = {
     entry: {
@@ -32,6 +33,12 @@ var baseConfig = {
     plugins: [
         new ExtractTextPlugin('[name].css'),
         new CssoWebpackPlugin(),
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            proxy: 'http://localhost:8080/',
+            files: ['./src/css/*.css','./*.html']
+        })
     ]
 }
 
