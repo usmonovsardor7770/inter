@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700');
-
-html, body, .app {
-    font-family: var(--primary-font);
-}
-
-h1 {
-    font-family: var(--secondary-font);
-}
