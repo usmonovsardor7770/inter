@@ -1,0 +1,244 @@
+/* RESPONSIVE */
+@media screen and (max-width: $laptop-large) {
+  #about .about-wrapper {
+    .about-info p {
+      font-size: 1.75em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(auto, 350px));
+      grid-column-gap: 1.5em;
+    }
+  }
+
+  #schedule {
+    font-size: 0.85em;
+  }
+
+  #register .title h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: $laptop) {
+  nav {
+    height: 70px;
+
+    .logo-svg {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    .logo {
+      font-size: 1.5em;
+    }
+
+    .nav-list a {
+      font-size: 1.1em;
+    }
+
+    .menu {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
+  header {
+    .header-title {
+      h1 {
+        font-size: 3.5em;
+      }
+
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+
+  #about .about-wrapper {
+    .about-info p {
+      font-size: 1.5em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2.25em;
+      }
+    }
+  }
+
+  #schedule {
+    font-size: 0.75em;
+  }
+
+  #register .title h1 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 950px) {
+  nav .logo {
+    display: none;
+  }
+
+  #faq .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 300px));
+    grid-column-gap: 1.5em;
+  }
+
+  #register .title h1 {
+    padding: 0 3em;
+  }
+}
+@media screen and (max-width: $tablet) {
+  nav {
+    .nav-list {
+      display: none;
+    }
+  }
+
+  header {
+    .header-title {
+      h1 {
+        font-size: 2.75em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #about .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .about-info {
+      padding: 5em 2em;
+
+      p {
+        font-size: 1.25em;
+      }
+    }
+
+    .about-img img {
+      height: 100%;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 300px));
+      grid-column-gap: 1.5em;
+      grid-row-gap: 5em;
+
+      .card h1 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #schedule {
+    .schedule-wrapper .date {
+      font-size: 0.745em;
+
+      h2 {
+        letter-spacing: 7px;
+      }
+    }
+  }
+
+  #gallery {
+    h1 {
+      font-size: 3.5em;
+    }
+
+    .container {
+      column-count: 2;
+    }
+  }
+
+  #register .title h1 {
+    padding: 0 2.5em;
+  }
+}
+@media screen and (max-width: 590px) {
+  #faq .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 300px));
+  }
+}
+@media screen and (max-width: $mobile) {
+  header {
+    .header-title {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  #about .about-wrapper {
+    .about-info p {
+      font-size: 1.15em;
+    }
+  }
+
+  #faq {
+    .faq-header {
+      h1 {
+        font-size: 1.85em;
+      }
+    }
+
+    .card-wrapper .card h1 {
+      font-size: 1.35em;
+    }
+
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(auto, 300px));
+    }
+  }
+
+  #schedule {
+    .schedule-wrapper .date {
+      font-size: 0.6em;
+
+      h2 {
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  #gallery {
+    .container {
+      column-count: 1;
+    }
+  }
+
+  #register .title h1 {
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width: $mobile-small) {}

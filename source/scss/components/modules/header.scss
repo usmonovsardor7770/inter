@@ -1,0 +1,46 @@
+header {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: $header-bg-grd, $header-bg-url;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .header-title {
+    width: 100%;
+    color: white;
+
+    h1 {
+      font-size: 4.5em;
+      font-family: $merriweather;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.75em;
+      letter-spacing: 0.7px;
+      margin: 2.5rem 0;
+    }
+
+    a.btn-register {
+      font-size: 1.25em;
+      letter-spacing: 2px;
+      color: white;
+      background: $blue;
+      box-shadow: rgba(black, .15) 0 3px 5px 0;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        box-shadow: rgba(black, .15) 0 5px 15px 0;
+        color: $blue;
+        background: white;
+      }
+    }
+  }
+}

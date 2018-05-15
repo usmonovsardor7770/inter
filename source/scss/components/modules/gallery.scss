@@ -1,0 +1,22 @@
+#gallery {
+  h1 {
+    text-align: center;
+    font-size: 3.75em;
+    padding: 1em 0;
+  }
+
+  .container {
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 1em;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 1em;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+      padding-bottom: 1em;
+    }
+  }
+}
