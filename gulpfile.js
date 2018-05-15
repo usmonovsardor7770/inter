@@ -59,7 +59,7 @@ gulp.task('js', function () {
 gulp.task('img', function () {
     return gulp.src('source/img/**/*')
         .pipe(image({
-            jpegRecompress: ['--strip', '--quality', 'medium', '--min', 1, '--max', 2],
+            jpegRecompress: ['--strip', '--quality', 'medium', '--min', 10, '--max', 20],
             jpegoptim: false,
             mozjpeg: true,
             concurrent: 10,

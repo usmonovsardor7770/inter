@@ -8,7 +8,7 @@ header {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: $header-bg-grd, $header-bg-url;
+  background: $header-bg-grd, $header-bg-url-org;
   background-size: cover;
   background-attachment: fixed;
 
@@ -42,5 +42,11 @@ header {
         background: white;
       }
     }
+  }
+  
+  @media srceen and (max-width: 450px){
+    background: $header-bg-grd, $header-bg-url-opt;
+      background-size: cover;
+    background-attachment: fixed;
   }
 }
