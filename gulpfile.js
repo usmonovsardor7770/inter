@@ -58,7 +58,12 @@ gulp.task('js', function () {
 // IMG Optimization
 gulp.task('img', function () {
     return gulp.src('source/img/**/*')
-        .pipe(image())
+        .pipe(image({
+            jpegRecompress: ['--strip', '--quality', 'medium', '--min', 1, '--max', 2],
+            jpegoptim: false,
+            mozjpeg: true,
+            concurrent: 10,
+        }))
         .pipe(gulp.dest('public/img/opt'))
         .pipe(browserSync.reload({
             stream: true
