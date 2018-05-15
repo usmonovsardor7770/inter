@@ -43,4 +43,6 @@ $(document).ready(function() {
   });
 
   var lightbox = $('#gallery a').simpleLightbox();
+
+  var myLazyLoad = new LazyLoad();
 });
