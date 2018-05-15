@@ -44,9 +44,9 @@ header {
     }
   }
   
-  @media srceen and (max-width: 450px){
+  @media screen and (max-width: 450px){
     background: $header-bg-grd, $header-bg-url-opt;
-      background-size: cover;
+    background-size: cover; 
     background-attachment: fixed;
   }
 }
