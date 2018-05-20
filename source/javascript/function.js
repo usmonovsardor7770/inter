@@ -42,7 +42,12 @@ $(document).ready(function() {
     $(".menu, .overlay").removeClass("active");
   });
 
-  var lightbox = $('#gallery a').simpleLightbox();
+  $('[data-fancybox="gallery"]').fancybox({
+    buttons : [
+      'zoom',
+      'close'
+    ]
+  });
 
   var myLazyLoad = new LazyLoad();
 });
