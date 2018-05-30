@@ -32,8 +32,8 @@ gulp.task('sass', function () {
         .pipe(minify({
             debug: true
         }, (details) => {
-            console.log(`${details.name}: ${details.stats.originalSize} - Original Size`);
-            console.log(`${details.name}: ${details.stats.minifiedSize} - Minified Size`);
+            console.log(`\x1b[36m${details.name}:\x1b[0m \x1b[31m${details.stats.originalSize} - Original Size\x1b[0m`);
+            console.log(`\x1b[36m${details.name}:\x1b[0m \x1b[92m${details.stats.minifiedSize} - Minified Size\x1b[0m`);
         }))
         .pipe(concat('styles.css'))
         .pipe(rename({
