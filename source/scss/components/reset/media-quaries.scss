@@ -20,34 +20,20 @@
     }
   }
 
-  #schedule {
-    font-size: 0.85em;
-  }
-
   #register .title h1 {
     font-size: 2em;
   }
 }
 @media screen and (max-width: $laptop) {
   nav {
-    height: 70px;
-
-    .logo-svg {
-      width: 2.5em;
-      height: 2.5em;
-    }
 
     .logo {
-      font-size: 1.5em;
-    }
-
-    .nav-list a {
-      font-size: 1.1em;
+      font-size: 1.4em;
     }
 
     .menu {
-      width: 2.5em;
-      height: 2.5em;
+      width: 2em;
+      height: 2em;
     }
   }
 
@@ -75,10 +61,6 @@
         font-size: 2.25em;
       }
     }
-  }
-
-  #schedule {
-    font-size: 0.75em;
   }
 
   #register .title h1 {
@@ -155,16 +137,6 @@
     }
   }
 
-  #schedule {
-    .schedule-wrapper .date {
-      font-size: 0.745em;
-
-      h2 {
-        letter-spacing: 7px;
-      }
-    }
-  }
-
   #gallery {
     h1 {
       font-size: 3.5em;
@@ -218,16 +190,6 @@
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(1, minmax(auto, 300px));
-    }
-  }
-
-  #schedule {
-    .schedule-wrapper .date {
-      font-size: 0.6em;
-
-      h2 {
-        letter-spacing: 5px;
-      }
     }
   }
 
